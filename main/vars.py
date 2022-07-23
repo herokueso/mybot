@@ -41,7 +41,7 @@ class Var(object):
         )
 
     UPDATES_CHANNEL = "TechZBots"
-    OWNER_ID = int(environ.get('OWNER_ID', '777000'))
+    OWNER_ID = str(environ.get('OWNER_ID', '777000'))
 
     BANNED_CHANNELS = list(set(int(x) for x in str(environ.get("BANNED_CHANNELS", "-1001296894100")).split()))
     BANNED_USERS = list(set(int(x) for x in str(environ.get("BANNED_USERS","5275470552 5287015877")).split()))
